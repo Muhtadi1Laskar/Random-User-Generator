@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: #9488B8;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.heading>h1 {
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 86px;
+    line-height: 180%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #F3E1DB;
+
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    /* height: 100%; */
+}
+
+.btn {
+    width: 226px;
+    height: 87px;
+    background-color: #9488B8;
+    border: 6px solid #F3E1DB;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    color: #F3E1DB;
+    letter-spacing: 0.04em;
+}
+
+.image {
+    display: flex;
+    align-self: flex-end;
+}
+
+img {
+    width: 60rem;
+
+}
+
+img.smallscreen { display: none; }
+        @media only screen and (max-width: 320px) {
+            img { 
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                margin-top: 3rem;
+                margin-left: -4rem;
+                width: 30rem; 
+            }
+            img.smallscreen { 
+                display: flex 
+            }
+        }
+        /* @media only screen and (max-width: 1024px) {
+            img {
+                margin-top: 3rem;
+                margin-left: -4rem;
+                width: 50rem; 
+            }
+            img.smallscreen { 
+                display: flex 
+            }
+        } */
+        /* @media only screen and (max-width: 768px) {
+            img {
+                margin-top: 3rem;
+                margin-left: 1rem;
+                width: 45rem; 
+            }
+            img.smallscreen { 
+                display: flex 
+            }
+        } */
+/* 
+        @media only screen and (max-width: 2560px) {
+            img {
+                margin-top: 3rem;
+                margin-left: 1rem;
+                width: 82rem; 
+            }
+            img.smallscreen { 
+                display: flex 
+            }
+        }
+ */
