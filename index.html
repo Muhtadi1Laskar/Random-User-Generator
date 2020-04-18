@@ -17,16 +17,51 @@
     <div class="containers">
       <div class="left-side">
         <div class="heading">
-            <h1>Profile Generator</h1>
-          </div>
-          <div class="button">
-            <button class="btn">Generate</button>
-          </div>
-    
-          
+          <h1>Profile Generator</h1>
+        </div>
+        <div class="buttons">
+          <button id="btn" class="btn">Generate</button>
+        </div>
       </div>
       <div class="image">
         <img src="background.png" alt="image" srcset="" />
+      </div>
+      <div
+        id="second"
+        class="second"
+        style="display: none; margin-bottom: 2rem; border-radius: 2rem;"
+      >
+        <div class="card" style="width: 40rem; background-color: #f3e1db;">
+          <img
+            id="image-id"
+            class="card-img-top"
+            src="https://robohash.org/24.218.243.24.png"
+            alt="Card image cap"
+            style="
+              width: 56%;
+              border: 2px solid #9488b8;
+              border-radius: 0px;
+              border-top: none;
+              border-left: none;
+            "
+          />
+          <div class="card-body">
+            <h5 class="card-title" style="color: #6f6a7f;">
+              Here's your new Identity
+            </h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Name: <span id="name"></span></li>
+            <li class="list-group-item">Email: <span id="email"></span></li>
+            <li class="list-group-item">Address: <span id="address"></span></li>
+            <li class="list-group-item">City: <span id="city"></span></li>
+            <li class="list-group-item">Phone: <span id="phone"></span></li>
+            <li class="list-group-item">website: <span id="website"></span></li>
+            <li class="list-group-item">
+              Company Name: <span id="company-name"></span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
