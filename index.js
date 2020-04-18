@@ -7,6 +7,22 @@ const phone = document.getElementById("phone");
 const website = document.getElementById("website");
 const companyName = document.getElementById("company-name");
 const img = document.getElementById("image-id");
+const heading = document.getElementById("heading");
+
+const text = "Profile Generator";
+let idx = 1;
+
+setInterval(writeText, 110);
+
+function writeText() {
+    heading.innerText = text.slice(0, idx);
+
+        idx++;
+
+        if( idx > text.length){
+            idx = 1;
+        }
+}
 
 const generate_profile = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
